@@ -5,21 +5,22 @@
 	display: inline-block;
 }
 
-.dropdown-text
+.dropdown > .dropdown-text
 {
     background-image: url("coui://gfx/ui/skin/custom_background_698_40_selected.png");
 	background-size: 100% 100%;
     text-shadow: 1px 1px 1px #000;
 	width: 100%;
-	height: 4.3rem;
+	height: 3rem;
 	text-align: center;
 }
 
-.dropdown:disabled .dropdown-text
+.dropdown:disabled > .dropdown-text
 {
 	background-image: url("coui://gfx/ui/skin/custom_background_698_40_disabled.png");
 }
-.dropdown-container
+
+.dropdown > .dropdown-container
 {
 	display: none;
 	overflow: auto;
@@ -27,22 +28,21 @@
 	position: absolute !important;
 }
 
-.dropdown-container-scroll
+.dropdown > .dropdown-container > .dropdown-container-scroll
 {
 	width: 100%;
 	position: absolute !important;
 	box-shadow: 0px 0px 16px black;
 }
 
-.dropdown:hover:not([disabled]) .dropdown-container
+.dropdown:hover:not([disabled]) > .dropdown-container
 {
    display: block;
 }
 
 .dropdown-child
 {
-	width: 100%;
-	height: 3rem;
+	height: auto;
 	text-align: center;
    	background-image: url("coui://gfx/ui/skin/custom_background_698_40.png");
 	background-size: 100% 100%;
